@@ -13,7 +13,7 @@ Notes
 ------------------------------------------------------------------------------------------------------------------------
 For job description corpus, basic data pre-processing steps such as stemming, lemmatization, stopword removal were employed.   
 To analyze the description corpus and build a classification model, [TFIDF](https://en.wikipedia.org/wiki/Tf%E2%80%93idf) vectorizer was employed to give lower weights to words with higher frequency in job description corpus as an initial step.  
-The salaries were then classified using [Multinomial Naive Bayes]  (https://en.wikipedia.org/wiki/Naive_Bayes_classifier#Multinomial_naive_Bayes) classification which showed an accuracy of 76%.  For performance comparison, freuqncy distance was calculated between words and top 1000 words were selected. A [Binomial Naive Bayes](https://en.wikipedia.org/wiki/Naive_Bayes_classifier) was then run on the words for classification which gave an almost equivalent accuracy of 74%. 
+The salaries were then classified using [Multinomial Naive Bayes](https://en.wikipedia.org/wiki/Naive_Bayes_classifier#Multinomial_naive_Bayes) classification which showed an accuracy of 76%.  For performance comparison, freuqncy distance was calculated between words and top 1000 words were selected. A [Binomial Naive Bayes](https://en.wikipedia.org/wiki/Naive_Bayes_classifier) was then run on the words for classification which gave an almost equivalent accuracy of 74%. 
 For further improvement, the analysis was run again by including bigrams of words. The accuracy remained same unexpectedly. 
 
 Installing libraries and packages
